@@ -1,7 +1,7 @@
 if __name__ == "__main__":
     try:
         username = input("Enter username: ")
-        with open('/Users/benoitboidin/Desktop/cremi_server_names.txt') as input_file:
+        with open('cremi_servers.txt') as input_file:
             lines = input_file.readlines()
             with open('cremi_config.txt', 'w+') as output_file:
                 for name in lines:
