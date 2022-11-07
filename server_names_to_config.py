@@ -7,6 +7,6 @@ if __name__ == "__main__":
                 for name in lines:
                     name = name.replace('\n', '')
                     print('Adding {} to config file.'.format(name))
-                    output_file.write('Host' + name + '\n  HostName'+ name + '.emi.u-bordeaux.fr\n  User ' + username' +  '\n  ProxyJump cremi\n  ForwardX11 yes\n\n')
+                    output_file.write('Host' + name + '\n  HostName'+ name + '.emi.u-bordeaux.fr\n  User ' + username +  '\n  ProxyJump cremi\n  ForwardX11 yes\n\n')
     except TypeError:
         print("Error")
